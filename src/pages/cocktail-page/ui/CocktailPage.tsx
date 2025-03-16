@@ -12,7 +12,7 @@ import { ErrorMessage } from '@shared/ui/ErrorMessage';
 export const CocktailPage: React.FC = () => {
   const { code } = useParams<{ code: string }>();
 
-  console.log('code', code)
+  console.log('code', code);
   const cocktails = useStore(cocktailsStore);
   const error = useStore($error);
   const isLoading = useStore(fetchCocktailsFx.pending);
