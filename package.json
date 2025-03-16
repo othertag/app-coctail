@@ -1,0 +1,43 @@
+{
+  "name": "app-coctail",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write .",
+    "precommit": "lint-staged",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "homepage": "https://othertag.github.io/app-coctail/",
+  "dependencies": {
+    "effector": "^22.0.5",
+    "effector-react": "^22.0.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.0",
+    "prettier": "^2.8.3",
+    "sass": "^1.62.0",
+    "typescript": "^4.6.4",
+    "vite": "^6.2.2"
+  }
+}
