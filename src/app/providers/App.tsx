@@ -12,7 +12,7 @@ export function App() {
       <Navigation codes={codes} />
 
       <Routes>
-        <Route path="/" element={<Navigate to={`${BASE_DOMAIN}/${codes[0]}`} replace />} />
+        <Route path="/" element={<Navigate to={`/${codes[0]}`} replace />} />
 
         <Route path="/:code" element={<CocktailPage />} />
         <Route path="*" element={<NotFoundPage />} />
