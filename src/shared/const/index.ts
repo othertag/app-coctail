@@ -1,0 +1,1 @@
+const BASE_DOMAIN = 'app-coctail'
