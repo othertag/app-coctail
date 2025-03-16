@@ -13,7 +13,7 @@ export const Navigation: React.FC<NavigationProps> = ({ codes }) => {
         {codes.map((code) => (
           <li key={code}>
             <NavLink
-              to={`/${code}`}
+              to={`/app-coctail/${code}`}
               className={({ isActive }) => (isActive ? styles.active : '')}
             >
               {code}
